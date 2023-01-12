@@ -50,11 +50,13 @@ int i = 0;
     }
     i++;
 }*/
+Console.WriteLine("name:");
+string name = Console.ReadLine();
 Console.WriteLine("room:");
- string room = Console.ReadLine();
+string room = Console.ReadLine();
 Console.WriteLine("password:");
 string pw = Console.ReadLine();
-string url = $"http://jhgkqrz.gensee.com/training/site/s/{room}?nickname=&token={pw}";
+string url = $"http://jhgkqrz.gensee.com/training/site/s/{room}?nickname={name}&token={pw}";
 Console.WriteLine(url);
 string htmlStr;
 WebRequest request = WebRequest.Create(url);            //实例化WebRequest对象  
